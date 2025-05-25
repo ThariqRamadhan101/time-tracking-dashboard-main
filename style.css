@@ -184,13 +184,13 @@ body {
   background-color: var(--color-yellow-300);
 }
 
-.timeframes btn {
+.timeframes div {
   opacity: 0.5;
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
 
-.timeframes btn.selected-timeframes {
+.timeframes div .selected-timeframes {
   opacity: 1;
 }
 

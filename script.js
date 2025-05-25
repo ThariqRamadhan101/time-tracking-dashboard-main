@@ -56,15 +56,15 @@ const appendItem = (item, timeframe) => {
 };
 
 const setupTimeframeSwitching = () => {
-  const buttons = document.querySelectorAll(".timeframes btn");
+  const buttons = document.querySelectorAll(".timeframes div");
 
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", () => {
+  buttons.forEach((div) => {
+    div.addEventListener("click", () => {
       buttons.forEach((b) => b.classList.remove("selected-timeframes"));
 
-      btn.classList.add("selected-timeframes");
+      div.classList.add("selected-timeframes");
 
-      const timeframe = btn.id;
+      const timeframe = div.id;
       populateDOM(globalData, timeframe);
     });
   });
