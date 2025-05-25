@@ -190,7 +190,7 @@ body {
   transition: opacity 0.2s ease;
 }
 
-.timeframes div .selected-timeframes {
+.timeframes .selected-timeframes {
   opacity: 1;
 }
 
